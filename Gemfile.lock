@@ -185,6 +185,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    statsd-ruby (1.2.0)
     thin (1.5.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -238,6 +239,7 @@ DEPENDENCIES
   rest-client
   rspec-rails
   sass-rails (~> 4.0.0.rc1)
+  statsd-ruby
   thin
   thor
   twitter

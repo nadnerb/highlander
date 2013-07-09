@@ -28,6 +28,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'twitter'
 gem 'omniauth-google-apps'
 
+gem 'statsd-ruby', :require => "statsd"
+
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails'

@@ -6,10 +6,10 @@ module Api
     before_filter :validate_payload!
 
     def create
+      code = :not_found
       if Event.create(payload.to_event_hash)
+        $statsd.increment("create:#{params[:metric]}")
         code = :ok
-      else
-        code = :not_found
       end
 
       respond_to do |format|
